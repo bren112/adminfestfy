@@ -1,0 +1,48 @@
+#title{
+    text-align: center;
+    font-size: 3pc;
+}
+.home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+img{
+    width: 50pc;
+}
+#aprovar{
+    background-color: rgb(10, 190, 10);
+    border: none;
+    border-radius: 3pc;
+    width: 9pc;
+}
+#excluir{
+    background-color: rgb(190, 10, 10);
+    border: none;
+    border-radius: 3pc;
+    width: 9pc;
+}
+#entrou{
+    background-color: rgb(8, 175, 241);
+    border: none;
+    border-radius: 3pc;
+    width: 9pc;
+}
+
+#bts{
+    display: flex;
+    flex-direction: column;
+    gap: 1pc;
+    align-items: center;
+}
+@media (max-width: 768px) {
+    #title{
+        text-align: center;
+        font-size: 2pc;
+    }
+    img{
+        width: 12pc;
+    }
+
+}

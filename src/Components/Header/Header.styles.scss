@@ -1,0 +1,86 @@
+.Header {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(44, 44, 44);
+  height: 72px;
+  padding: 0 20px;
+  align-items: center;
+
+  .title {
+    color: white;
+    font-size: 32px;
+  }
+
+  .menu-button {
+    display: none;
+    width: 40px;
+    height: 40px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: relative;
+
+    svg {
+      fill: white;
+      width: 100%;
+      height: 100%;
+      transition: transform 0.3s ease;
+    }
+
+    &.open svg:first-child {
+      display: none;
+    }
+
+    &.open svg:nth-child(2) {
+      display: none;
+    }
+
+    &.open svg:last-child {
+      display: none;
+    }
+  }
+
+  .nav-container {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+
+    .nav {
+      color: white;
+      font-size: 18px;
+      text-decoration: none;
+    }
+
+    a:hover,
+    a.active {
+      color:  rgb(0, 136, 247);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .menu-button {
+      display: block;
+    }
+
+    .nav-container {
+      display: none;
+      flex-direction: column;
+      gap: 10px;
+      width: 100%;
+      text-align: center;
+      position: absolute;
+      top: 72px;
+      left: 0;
+      background-color: rgb(44, 44, 44);
+
+
+      .nav {
+        margin: 10px 0;
+      }
+
+      &.open {
+        display: flex;
+      }
+    }
+  }
+}

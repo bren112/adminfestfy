@@ -1,0 +1,21 @@
+ <h1>App</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>Telefone</th>
+            <th>Valor Pago</th>
+          </tr>
+        </thead>
+        <tbody>
+          {users.map((user) => (
+            <tr key={user.id}>
+              <td>{user.id}</td>
+              <td>{user.nome}</td>
+              <td>{user.telefone}</td>
+              <td>{user.valorpago}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
