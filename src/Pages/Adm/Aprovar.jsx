@@ -49,7 +49,7 @@ function Aprovar() {
 
   return (
     <div>
-      <h1>APROVAR ✅</h1>
+      <h1>GERENCIE AQUI ✅</h1>
       <table>
         <thead>
           <tr>
