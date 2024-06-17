@@ -11,6 +11,9 @@
 img{
     width: 50pc;
 }
+#valorTotal{
+    color:  rgb(8, 175, 241);
+}
 #aprovar{
     background-color: rgb(10, 190, 10);
     border: none;
